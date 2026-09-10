@@ -1,4 +1,9 @@
 .env
-data/*.db
-uploads/*
-!uploads/.gitkeep
+.env.local.backup
+node_modules/
+data/
+uploads/
+outputs/
+work/
+.DS_Store
+.pnpm-store/
