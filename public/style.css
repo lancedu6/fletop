@@ -907,6 +907,7 @@ header{height:76px;padding:0;background:#fff;border-bottom:1px solid #e3e8ed}.he
 .results-search .search{width:min(100%,850px);margin:0 auto!important;border:1px solid #dce2eb!important;border-radius:15px!important;background:#fff!important;box-shadow:0 12px 28px rgba(48,59,92,.1)!important}
 .site-footer.site-footer{background:linear-gradient(135deg,#f5f8ff,#fafbff 48%,#f5f1ff)!important}
 @media(max-width:720px){.brand img,.footer-brand strong img{width:96px!important;height:32px!important}.landing-hero.landing-hero{min-height:395px;padding:48px 16px;background-image:radial-gradient(ellipse 110% 75% at 90% 0%,rgba(180,165,255,.38),transparent 65%),radial-gradient(ellipse 105% 80% at 0% 100%,rgba(173,220,255,.42),transparent 64%),linear-gradient(145deg,#fbfcff,#f1efff 56%,#edf5ff)!important}.landing-hero.landing-hero::before{animation:none}.landing-hero h1{margin-bottom:25px!important;font-size:34px!important;letter-spacing:-1.65px!important;line-height:1.13!important}.landing-hero .search{border-radius:14px!important}.results-search{padding:16px 10px!important}}
+@media(max-width:720px){.site-footer.site-footer{text-align:center!important}.footer-brand,.footer-links{justify-items:center!important;text-align:center!important}.footer-brand>p{margin-inline:auto!important}.socials{justify-content:center!important}.footer-links{width:100%}.footer-links a{width:100%}}
 @media(prefers-reduced-motion:reduce){.landing-hero.landing-hero::before{animation:none}}
 
 /* The route selector is the focal point of the landing page. */
