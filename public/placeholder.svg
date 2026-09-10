@@ -1,0 +1,12 @@
+<svg width="960" height="560" viewBox="0 0 960 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="960" height="560" fill="#EAF1EE"/>
+<path d="M0 408C183 359 290 474 481 420C657 370 742 432 960 370V560H0V408Z" fill="#D9E7E1"/>
+<rect x="231" y="212" width="370" height="177" rx="16" fill="#3D43DC"/>
+<path d="M601 264H696L765 334V389H601V264Z" fill="#5860E8"/>
+<path d="M624 287H679L722 335H624V287Z" fill="#D8E4FF"/>
+<rect x="260" y="243" width="235" height="29" rx="8" fill="#747AF0"/>
+<rect x="260" y="292" width="235" height="29" rx="8" fill="#747AF0"/>
+<circle cx="332" cy="402" r="44" fill="#26312C"/><circle cx="332" cy="402" r="20" fill="#FBFCFB"/>
+<circle cx="676" cy="402" r="44" fill="#26312C"/><circle cx="676" cy="402" r="20" fill="#FBFCFB"/>
+<text x="480" y="132" text-anchor="middle" fill="#53625B" font-family="Arial, sans-serif" font-size="26" font-weight="700">CARGA DISPONIBLE</text>
+</svg>

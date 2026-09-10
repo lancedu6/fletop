@@ -1,0 +1,20 @@
+{
+  "name": "fletop-cargas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:migrate-sqlite": "node scripts/migrate-sqlite-to-postgres.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "pg": "8.16.3",
+    "ubigeo-peru": "^2.0.2"
+  }
+}

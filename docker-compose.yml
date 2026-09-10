@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: llevalo
+      POSTGRES_USER: llevalo
+      POSTGRES_PASSWORD: llevalo_local
+    ports:
+      - "5432:5432"
+    volumes:
+      - llevalo_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U llevalo -d llevalo"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  llevalo_postgres:
