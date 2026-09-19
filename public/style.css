@@ -910,6 +910,7 @@ header{height:76px;padding:0;background:#fff;border-bottom:1px solid #e3e8ed}.he
 @media(max-width:720px){.site-footer.site-footer{text-align:center!important}.footer-brand,.footer-links{justify-items:center!important;text-align:center!important}.footer-brand>p{margin-inline:auto!important}.socials{justify-content:center!important}.footer-links{width:100%}.footer-links a{width:100%}}
 
 .legal-page{max-width:850px!important}.legal-content{margin-top:30px;color:#39444e;font-size:15px;line-height:1.72}.legal-content h2{margin:38px 0 12px;color:#18212e;font-size:22px;letter-spacing:-.5px}.legal-content p{margin:0 0 17px}.legal-content ul{margin:0 0 18px;padding-left:22px}.legal-content li{margin:5px 0}.legal-content strong{color:#242d38;font-weight:750}@media(max-width:720px){.legal-content{font-size:14px;line-height:1.68}.legal-content h2{margin-top:30px;font-size:19px}}
+.user-list .user-meta{color:#8a958d;font-size:11px;line-height:1.35}@media(max-width:720px){.user-list .user-meta{max-width:210px}}
 @media(prefers-reduced-motion:reduce){.landing-hero.landing-hero::before{animation:none}}
 
 /* The route selector is the focal point of the landing page. */
