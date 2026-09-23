@@ -589,9 +589,15 @@ main{min-height:calc(100vh - 76px)}
 
 .legal a{color:var(--blue)}
 
-.google{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:12px}
+.google{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:44px;padding:10px 14px;border:1px solid #d8ded5;border-radius:8px;background:#fff;color:var(--ink);font-size:14px;font-weight:700;line-height:1.2;text-decoration:none;transition:border-color .16s ease,box-shadow .16s ease,background .16s ease}
 
-.google span{font-size:18px;color:#4285f4}
+.google:hover{border-color:#b8c2ba;background:#fafcfb;box-shadow:0 3px 10px rgba(26,43,33,.08)}
+
+.google:focus-visible{outline:3px solid rgba(61,67,220,.24);outline-offset:2px}
+
+.google svg{width:18px;height:18px;flex:none}
+
+.google span{color:inherit}
 
 .block{display:block;margin-top:10px;text-align:center}
 
