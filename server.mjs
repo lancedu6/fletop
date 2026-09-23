@@ -21,7 +21,7 @@ const hash=password=>crypto.scryptSync(password,secret,32).toString('hex');
 const token=id=>{const value=String(id),sig=crypto.createHmac('sha256',secret).update(value).digest('hex');return value+'.'+sig};
 const cookie=(req,name)=>(req.headers.cookie||'').match(new RegExp('(?:^|;\\s*)'+name+'=([^;]+)'))?.[1];
 async function user(req){const raw=cookie(req,'session');if(!raw)return null;const [id,sig]=raw.split('.'),expected=crypto.createHmac('sha256',secret).update(id||'').digest('hex');if(!id||!sig||sig.length!==expected.length||!crypto.timingSafeEqual(Buffer.from(sig),Buffer.from(expected)))return null;return (await query('SELECT id,name,email,phone,role,avatar,active FROM users WHERE id=$1 AND active=true',[id])).rows[0]||null}
-const recordLogin=id=>query('UPDATE users SET last_login_at=now() WHERE id=$1',[id]);
+const recordLogin=async id=>{const result=await query('UPDATE users SET last_login_at=now() WHERE id=$1 RETURNING last_login_at',[id]);if(result.rowCount!==1)throw Error('No se pudo registrar el inicio de sesión');return result.rows[0].last_login_at};
 async function requireUser(req,res){const account=await user(req);if(!account){json(res,401,{error:'Debes iniciar sesión'});return null}return account}
 const listing=row=>({...row,images:Array.isArray(row.images)?row.images:JSON.parse(row.images||'[]')});
 function saveImage(data){const match=String(data||'').match(/^data:(image\/(?:png|jpeg|webp));base64,(.+)$/);if(!match)return null;const file=Date.now()+'-'+crypto.randomUUID()+'.'+match[1].split('/')[1].replace('jpeg','jpg');fs.writeFileSync(path.join(root,'uploads',file),Buffer.from(match[2],'base64'));return '/uploads/'+file}
