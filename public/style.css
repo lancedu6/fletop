@@ -599,6 +599,8 @@ main{min-height:calc(100vh - 76px)}
 
 .google span{color:inherit}
 
+.user-cell .google-mark{width:14px;height:14px;flex:none;margin-left:1px}
+
 .block{display:block;margin-top:10px;text-align:center}
 
 .listing-shell{max-width:640px;margin:25px auto 80px}
