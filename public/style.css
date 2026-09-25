@@ -695,6 +695,10 @@ main{min-height:calc(100vh - 76px)}
 
 .admin-listing span,.admin-listing small,.user-list small{color:#68736c;font-size:12px}
 
+.admin-listing .expired-note{color:#a24949;font-weight:700}
+
+.alternative-results{margin-top:42px;padding-top:30px;border-top:1px solid var(--line)}
+
 .row-actions{display:flex;justify-content:flex-end;gap:6px;flex-wrap:wrap}
 
 .filter{max-width:280px}
