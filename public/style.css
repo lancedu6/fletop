@@ -999,16 +999,19 @@ input:focus,select:focus,textarea:focus{border-color:#71827a!important;box-shado
 .job-badge.hazmat svg{color:#a9782d}
 .job-badge.hazmat{background:#f8f6f0;color:#4c4536}
 .job-location svg,.work-meta:first-child svg{color:#587263}
-.job-facts{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(130px,.9fr) minmax(120px,.75fr);margin:22px 0;border:1px solid #e1e6e1;border-radius:10px;background:#f7f9f8}
-.job-fact{display:grid;align-content:start;gap:4px;min-width:0;padding:11px 13px;border-left:1px solid #e1e6e1}
-.job-fact:first-child{border-left:0}
-.job-fact>span{color:#68736c;font-size:11px;font-weight:600;letter-spacing:.02em}
-.job-fact>b{overflow-wrap:anywhere;color:#38443c;font-size:13px;font-weight:600;line-height:1.35}
-.job-fact small{color:#68736c;font-size:11px;line-height:1.3}
+.job-facts{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(112px,.7fr);margin:22px 0 18px}
+.job-fact{display:grid;align-content:start;gap:5px;min-width:0}
+.job-fact+.job-fact{padding-left:20px;border-left:1px solid #e1e6e1}
+.job-fact>span{color:#68736c;font-size:12px;font-weight:600;letter-spacing:.01em}
+.job-fact>b{overflow-wrap:anywhere;color:#38443c;font-size:14px;font-weight:600;line-height:1.42}
+.job-hazmat{display:inline-flex;align-items:center;width:max-content;max-width:100%;margin-top:2px;padding:3px 5px;border:1px solid #ecd7d7;border-radius:4px;background:#fdf5f5;color:#965858;font-size:9px;font-weight:600;letter-spacing:.045em;line-height:1.2;text-transform:uppercase}
 .job-detail h1{font-size:28px;font-weight:600;line-height:1.28}
 .job-detail-cover-button{display:block;width:100%;margin:0 0 18px;padding:0;border:0;border-radius:12px;overflow:hidden;background:#edf1ed;cursor:zoom-in}
 .job-detail-cover-button .job-detail-cover,.job-detail>.job-detail-cover{display:block;width:100%;height:180px;max-width:none;max-height:none;margin:0 0 18px;border:0;border-radius:12px;object-fit:cover}
 .job-detail-cover-button .job-detail-cover{margin:0;border-radius:0}
+.job-salary{display:grid;gap:3px;margin:0 0 24px;padding:0;border:0;border-radius:0;background:transparent}
+.job-salary span{color:#68736c;font-size:12px;font-weight:600;letter-spacing:.01em;text-transform:none}
+.job-salary b{color:#38443c;font-size:18px;font-weight:600;line-height:1.3}
 .job-publisher-detail{gap:4px}
 .job-publisher-detail small{color:#748078;font-size:12px;line-height:1.35}
 .job-image-lightbox-backdrop{position:fixed;inset:0;z-index:70;display:grid;place-items:center;padding:18px;background:rgba(12,16,14,.82)}
@@ -1024,7 +1027,7 @@ input:focus,select:focus,textarea:focus{border-color:#71827a!important;box-shado
 
 /* Desktop route search: align the action with the actual select controls, not their labels. */
 @media(min-width:721px){.search button{align-self:end;margin:0 8px 13px!important}}
-@media(max-width:720px){.job-detail h1{font-size:24px}.job-facts{grid-template-columns:repeat(2,minmax(0,1fr));margin:19px 0}.job-fact{padding:10px 11px}.job-fact:nth-child(3){grid-column:1/-1;border-top:1px solid #e1e6e1;border-left:0}.job-detail-cover-button{margin-bottom:16px}.job-detail-cover-button .job-detail-cover,.job-detail>.job-detail-cover{height:140px;margin-bottom:16px}.job-image-lightbox-backdrop{padding:12px}.job-image-lightbox{width:100%;height:88vh}.job-image-lightbox-close{top:4px;right:4px}}
+@media(max-width:720px){.job-detail h1{font-size:24px}.job-facts{grid-template-columns:minmax(0,1.45fr) minmax(96px,.7fr);margin:20px 0 18px}.job-fact+.job-fact{padding-left:14px}.job-hazmat{white-space:normal}.job-detail-cover-button{margin-bottom:16px}.job-detail-cover-button .job-detail-cover,.job-detail>.job-detail-cover{height:140px;margin-bottom:16px}.job-image-lightbox-backdrop{padding:12px}.job-image-lightbox{width:100%;height:88vh}.job-image-lightbox-close{top:4px;right:4px}}
 
 /* Shared admin tables: dense enough for management, with a contained mobile scroll. */
 .admin-table-wrap{max-width:100%;margin-top:14px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e1e6e1;border-radius:14px;background:#fff}
