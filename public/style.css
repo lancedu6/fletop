@@ -964,3 +964,46 @@ header{height:76px;padding:0;background:#fff;border-bottom:1px solid #e3e8ed}.he
 .profile-section-switch{display:inline-flex;gap:3px;max-width:100%;margin:0 auto 20px;padding:4px;border:1px solid #e2e7e2;border-radius:12px;background:#f5f7f5}.profile-section-switch a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:7px 13px;border:0!important;border-radius:8px!important;background:transparent!important;color:#667169;box-shadow:none!important;font-size:13px;font-weight:750;white-space:nowrap}.profile-section-switch a:hover{background:#fff!important;color:#28352d}.profile-section-switch a.active{background:#fff!important;color:#28352d;box-shadow:0 2px 6px rgba(25,37,29,.1)!important}.profile-section-switch a:focus-visible{outline:2px solid #829b87;outline-offset:2px}
 .admin-job-report .admin-job-icon{flex:none}.admin-job-report small{display:block}
 @media(max-width:720px){.profile-section-switch{display:flex;width:100%;box-sizing:border-box}.profile-section-switch a{flex:1;min-width:0;padding-inline:8px;font-size:12px}.job-publisher-detail{margin-bottom:18px}}
+
+/* Visual cleanup: quiet surfaces, clear borders and deliberate depth only. */
+.landing-hero.landing-hero{background:#f5f7fb!important;background-image:linear-gradient(120deg,#f8fafc,#eef2f8)!important}
+.landing-hero.landing-hero::before{display:none!important}
+.results-search{background:#f4f6f8!important;background-image:linear-gradient(120deg,#f8fafc,#eef2f8)!important}
+.site-footer.site-footer{background:#f6f8fa!important}
+.landing-hero .search,.results-search .search{box-shadow:0 3px 10px rgba(24,33,46,.08)!important}
+.search,.job-search-zone .job-filters{box-shadow:0 2px 8px rgba(24,33,46,.06)!important}
+.landing-hero .search button,.results-search .search button,.search button,.job-primary,.job-contact-actions .job-apply-primary{box-shadow:none!important}
+
+.btn,button{box-shadow:none!important;transition:background-color .16s ease,border-color .16s ease,color .16s ease,opacity .16s ease!important}
+.btn:hover,button:hover,.card:hover,.job-card:hover,.publish-options a:hover{transform:none!important;box-shadow:none!important}
+.card,.job-card{box-shadow:none!important}
+.card:hover,.job-card:hover{border-color:#cbd4cd!important}
+.publish-options a{box-shadow:none!important}
+.work-entry{box-shadow:none!important}
+.info-page{box-shadow:0 3px 12px rgba(24,42,31,.05)!important}
+.google:hover{box-shadow:none!important}
+.not-found{background:#f8faf8!important}
+.profile-section-switch a.active{box-shadow:0 1px 3px rgba(25,37,29,.08)!important}
+.listing .actions,.job-mobile-actions{box-shadow:0 3px 12px rgba(15,22,19,.12)!important}
+.modal{box-shadow:0 12px 30px rgba(17,24,20,.16)!important}
+.hamb[open]{box-shadow:0 8px 20px rgba(23,32,23,.12)!important}
+
+input:focus,select:focus,textarea:focus{border-color:#71827a!important;box-shadow:none!important}
+:where(.btn,button,a,select,input,textarea):focus-visible{outline:2px solid #71827a!important;outline-offset:2px!important;box-shadow:none!important}
+
+/* The form heading already names the action; the module label is redundant here. */
+.job-form>.work-label:first-child{display:none}
+
+.job-badges{gap:7px}
+.job-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid #e1e6e1;background:#f5f7f5;color:#38443c;font-size:12px;font-weight:650;line-height:1.2}
+.job-badge svg{width:14px;height:14px;flex:none;color:#66736b}
+.job-badge.job-license svg{color:#3d43dc}
+.job-badge.job-experience svg{color:#5d7884}
+.job-badge.hazmat svg{color:#a9782d}
+.job-badge.hazmat{background:#f8f6f0;color:#4c4536}
+.job-location svg,.work-meta:first-child svg{color:#587263}
+
+.job-publisher-detail{margin-top:24px;margin-bottom:20px;padding-top:16px;border-bottom:0;color:#68736c}
+.job-report{display:inline-flex!important;align-items:center;gap:4px;width:max-content!important;min-height:0!important;height:auto!important;margin-top:8px!important;padding:2px 0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#6d7870!important;font-size:11px!important;font-weight:650!important;line-height:1.3!important;box-shadow:none!important}
+.job-report svg{width:12px!important;height:12px!important;flex:none;color:currentColor}
+.job-report:hover{background:transparent!important;color:#35423a!important;text-decoration:underline}
