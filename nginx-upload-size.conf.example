@@ -1,0 +1,3 @@
+# Include this directive inside the existing `server { ... }` block for Fletop.
+# Job cover images are sent as JSON base64 and may occupy up to ~8 MB on the wire.
+client_max_body_size 10m;
