@@ -966,8 +966,6 @@ header{height:76px;padding:0;background:#fff;border-bottom:1px solid #e3e8ed}.he
 @media(max-width:720px){.profile-section-switch{display:flex;width:100%;box-sizing:border-box}.profile-section-switch a{flex:1;min-width:0;padding-inline:8px;font-size:12px}.job-publisher-detail{margin-bottom:18px}}
 
 /* Visual cleanup: quiet surfaces, clear borders and deliberate depth only. */
-.landing-hero.landing-hero{background:#f5f7fb!important;background-image:linear-gradient(120deg,#f8fafc,#eef2f8)!important}
-.landing-hero.landing-hero::before{display:none!important}
 .results-search{background:#f4f6f8!important;background-image:linear-gradient(120deg,#f8fafc,#eef2f8)!important}
 .site-footer.site-footer{background:#f6f8fa!important}
 .landing-hero .search,.results-search .search{box-shadow:0 3px 10px rgba(24,33,46,.08)!important}
