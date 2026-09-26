@@ -26,4 +26,5 @@
  ,'shield-check':'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>'
  ,mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>'
  ,'plus-circle':'<circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/>'
+ ,'chevron-down':'<path d="m6 9 6 6 6-6"/>'
 };const draw=el=>{const name=el.dataset.icon,body=paths[name];if(!body)return;const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','2');svg.setAttribute('stroke-linecap','round');svg.setAttribute('stroke-linejoin','round');svg.setAttribute('aria-hidden','true');svg.innerHTML=body;el.replaceWith(svg)};const render=()=>document.querySelectorAll('[data-icon]').forEach(draw);window.LightIcons={render};render();new MutationObserver(render).observe(document.body,{childList:true,subtree:true})})();
