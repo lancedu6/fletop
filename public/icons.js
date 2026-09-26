@@ -17,4 +17,13 @@
  map:'<path d="m9 18-6-3V5l6 3 6-3 6 3v10l-6-3-6 3Z"/><path d="M9 8v10M15 5v10"/>',
  grid:'<rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/>',
  list:'<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/>'
+ ,briefcase:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/>'
+ ,'briefcase-business':'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/>'
+ ,badge:'<path d="M12 3 14.2 5.2l3-.2.8 2.9 2.5 1.7-1.5 2.6.5 2.9-2.7 1.3-1.5 2.6-2.8-.8-2.8.8-1.5-2.6-2.7-1.3.5-2.9L3.5 9.6 6 7.9 6.8 5l3 .2Z"/><path d="m9.5 12 1.6 1.6 3.4-3.4"/>'
+ ,clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'
+ ,wallet:'<path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2Z"/><path d="M4 8h14a2 2 0 0 1 2 2v6h-5a2 2 0 0 1 0-4h5"/>'
+ ,'map-pin':'<path d="M20 10c0 5-8 11-8 11s-8-6-8-11a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>'
+ ,'shield-check':'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>'
+ ,mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>'
+ ,'plus-circle':'<circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/>'
 };const draw=el=>{const name=el.dataset.icon,body=paths[name];if(!body)return;const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','2');svg.setAttribute('stroke-linecap','round');svg.setAttribute('stroke-linejoin','round');svg.setAttribute('aria-hidden','true');svg.innerHTML=body;el.replaceWith(svg)};const render=()=>document.querySelectorAll('[data-icon]').forEach(draw);window.LightIcons={render};render();new MutationObserver(render).observe(document.body,{childList:true,subtree:true})})();
